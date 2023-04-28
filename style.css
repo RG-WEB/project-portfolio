@@ -323,17 +323,17 @@ img {
   padding: 1rem;
   width: 50%;
   transition: all 0.2s linear;
-  animation: btn-top;
+  animation: btn-top 5s 1;
 }
 
 @keyframes btn-top {
   0% {
     transform: translateY(100px);
+    opacity: 0;
   }
 
   100% {
     transform: translateY(0);
-    opacity: 0;
   }
 }
 
