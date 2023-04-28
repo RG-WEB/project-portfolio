@@ -425,18 +425,6 @@ footer a {
   animation: tail 3s ease-in-out infinite, falling 3s ease-in-out infinite;
 }
 
-.star-project {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 4px;
-  background: linear-gradient(-45deg, #fff, rgba(0, 0, 255, 0));
-  border-radius: 999px;
-  filter: drop-shadow(0 0 6px #699bff);
-  animation: tail 3s ease-in-out infinite,
-    falling-project 3s ease-in-out infinite;
-}
-
 @keyframes tail {
   0% {
     width: 0;
@@ -454,21 +442,12 @@ footer a {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(1100px);
-  }
-}
-
-@keyframes falling-project {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(2000px);
+    transform: translateX(450px);
   }
 }
 
 .star::before,
-.star::after .star-project::before .star-project::after {
+.star::after {
   content: "";
   position: absolute;
   top: calc(50% - 2px);
