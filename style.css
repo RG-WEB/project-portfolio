@@ -82,7 +82,7 @@ body {
 }
 
 .show-links {
-  height: 500px;
+  height: 400px;
 }
 
 @media screen and (min-width: 992px) {
@@ -197,6 +197,7 @@ body {
   padding-top: 4rem;
   margin-bottom: 1rem;
   font-size: 2rem;
+  text-transform: uppercase;
   font-style: italic;
   animation: bottom-title 5s 1;
 }
@@ -294,8 +295,10 @@ img {
   text-align: center;
   color: #fff;
   letter-spacing: 2px;
+  font-size: 1.5rem;
   line-height: 3rem;
   animation: info-up 5s 1;
+  margin-bottom: 3rem;
 }
 
 @keyframes info-up {
@@ -307,6 +310,36 @@ img {
   100% {
     transform: translateY(0);
   }
+}
+
+.btn-cv {
+  color: #fff;
+  background: purple;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 50%;
+  transition: all 0.2s linear;
+  animation: btn-top;
+}
+
+@keyframes btn-top {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.btn-cv:hover {
+  background-color: #fff;
+  color: purple;
 }
 
 /* contact */
@@ -324,11 +357,8 @@ img {
 .contact-title {
   color: #fff;
   font-size: 3rem;
-  padding-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
-}
-
-.contact-title {
   animation: contact-down 5s 1;
 }
 
@@ -344,8 +374,8 @@ img {
 }
 
 .underline {
-  border: 1px solid purple;
-  width: 10%;
+  border: 5px solid rgba(128, 0, 128, 0.629);
+  width: 8%;
   margin: 0 auto;
   margin-top: 1rem;
 }
@@ -353,6 +383,7 @@ img {
 .contact-center-info {
   color: #fff;
   text-align: center;
+  font-size: 1.5rem;
   gap: 1rem;
   animation: info-up 5s 1;
 }
