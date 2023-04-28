@@ -203,6 +203,18 @@ body {
   margin-bottom: 1rem;
   font-size: 2rem;
   font-style: italic;
+  animation: bottom-title 5s 1;
+}
+
+@keyframes bottom-title {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* titre d'un projet */
@@ -269,6 +281,18 @@ img {
   color: #fff;
   text-transform: uppercase;
   font-size: 2rem;
+  animation: about-up 5s 1;
+}
+
+@keyframes about-up {
+  0% {
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatey(0);
+  }
 }
 
 .about-info {
@@ -276,6 +300,18 @@ img {
   color: #fff;
   letter-spacing: 2px;
   line-height: 3rem;
+  animation: info-up 5s 1;
+}
+
+@keyframes info-up {
+  0% {
+    transform: translatey(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* contact */
@@ -297,6 +333,21 @@ img {
   text-align: center;
 }
 
+.contact-title {
+  animation: contact-down 5s 1;
+}
+
+@keyframes contact-down {
+  0% {
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .underline {
   border: 1px solid purple;
   width: 10%;
@@ -308,6 +359,18 @@ img {
   color: #fff;
   text-align: center;
   gap: 1rem;
+  animation: info-up 5s 1;
+}
+
+@keyframes info-up {
+  0% {
+    transform: translatey(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .contact-center-info a {
